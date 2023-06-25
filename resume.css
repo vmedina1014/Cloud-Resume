@@ -1,0 +1,27 @@
+
+html{
+    font-family: 'Tenor Sans',sans-serif;
+  }
+  hr{
+      background: grey;
+  }
+  .flex-container{
+      position: relative;
+      display: flex;
+  }
+  #sidebar{
+      flex: 15%;
+      display: block;
+      position: relative;
+      margin: 5% 2% 0 10%;
+      width: 100%;
+      height: 100%;
+  }
+  #info-pages{
+      flex: 55%;
+      display: block;
+      margin-top: 5%;
+      margin-right: 10%;
+      width: 100%;
+      height: 100%;
+  }  
