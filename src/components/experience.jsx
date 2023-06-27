@@ -59,15 +59,16 @@ export default class Experience extends Component {
 
     render() {
         return (
-            <div>
-                <h1>John Doe</h1>
-                <h3>React.js Developer</h3>
-                <h1>Experience</h1>
+            <div id='info-pages'>
+                
+                
+                <h1>Work Experience</h1>
+                <hr />
 
 
                 {experience.map((exp, index)=> (
                     <div key={index}>
-                        <h2>{exp.name}</h2>
+                        <h3>{exp.name}</h3>
                         <span className='position'><b>{exp.position}</b></span>
                         <span className="date">{exp.duration}</span>
                         <ul>

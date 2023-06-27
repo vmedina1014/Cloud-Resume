@@ -5,9 +5,7 @@ import Experience from './components/experience'
 import Sidebar from './components/sidebar'
 function App() {
   return (
-    <div className="flex-container">
-      
-      
+    <div class="flex-container">
       <Sidebar></Sidebar>
       <Experience></Experience>
     </div>
