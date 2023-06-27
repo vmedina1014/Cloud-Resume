@@ -8,6 +8,7 @@ import Certifications from './components/certifications';
 import Contact from './components/contact';
 import Resume_Download from './components/resume_download'
 import Leadership from './components/leadership'
+import Activities from './components/honors_activities'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <div className='page'>
         <Experience></Experience>
         <Leadership></Leadership>
+        <Activities></Activities>
         </div>
       </div>
     </div>

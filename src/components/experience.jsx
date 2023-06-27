@@ -69,7 +69,7 @@ export default class Experience extends Component {
 
                 {experience.map((exp, index)=> (
                     <div key={index}>
-                        <h3>{exp.name}</h3>
+                        <h2>{exp.name}</h2>
                         <span className='position'><b>{exp.position}</b></span>
                         <span className="date">{exp.duration}</span>
                         <ul>
