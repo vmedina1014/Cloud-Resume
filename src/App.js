@@ -7,13 +7,14 @@ import Education from './components/education'
 import Certifications from './components/certifications';
 import Contact from './components/contact';
 import Resume_Download from './components/resume_download'
+import Leadership from './components/leadership'
 
 function App() {
   return (
     <div class="flex-container">
 
-
-      <div id="sidebar">
+      {/* TODO:Fix the Flexbox to not cut off picture*/}
+      <div id="sidebar"> 
         <About></About>
         <hr></hr>
         <Skills></Skills>
@@ -26,9 +27,12 @@ function App() {
         <hr></hr>
         <Resume_Download></Resume_Download>
       </div>
-
-
-      <Experience></Experience>
+      <div id='info-pages'>
+      <div className='page'>
+        <Experience></Experience>
+        <Leadership></Leadership>
+        </div>
+      </div>
     </div>
   );
 }

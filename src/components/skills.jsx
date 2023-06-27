@@ -9,17 +9,12 @@ class Skills extends Component {
   render() {
     return (
       <div >
-        <h3 className="sidebar-section">Skills</h3>
+        <h3 className="skills-section">Skills</h3>
         {
           skills.map((skills, index) => (
-
-            <span>
-              <span className='skills'>
+            <span><p className='skills'>
                 {skills}
-              </span>
-              &nbsp;
-            </span>
-
+              </p> </span>            
           )
           )
         }

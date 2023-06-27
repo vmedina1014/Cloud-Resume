@@ -59,8 +59,8 @@ export default class Experience extends Component {
 
     render() {
         return (
-        <div id='info-pages'>
-            <div className='page'>
+        <div >
+            
                 
                 
                 <h1>Work Experience</h1>
@@ -80,7 +80,7 @@ export default class Experience extends Component {
                     </div>
                 ))}
             </div>
-            </div>
+           
             
         );
     }
