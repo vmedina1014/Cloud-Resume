@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+html {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+hr {
+  background: grey;
+}
+
+.flex-container {
+  position: relative;
+  display: flex;
+}
+
+#sidebar {
+  flex: 15%;
+  display: block;
+  position: relative; 
+  margin: 5% 2% 0 10%;
+  width: 100%;
+  height: 100%;
+  
+  
+  
+
+}
+
+
+#info-pages {
+  flex: 55%;
+  display: block;
+  margin-top: 5%;
+  margin-right: 10%;
+  width: 100%;
+  height: 100%;
+
+}
+
+.name {
+  font-size: 35px;
+}
+
+.page {
+  box-shadow: 0px 0px 20px -9px rgba(0, 0, 0, 0.75);
+  overflow-x: hidden;
+  margin-bottom: 30px;
+  padding: 15px 30px 30px 30px;
+  background-color: #fff;
+}
+
+.tag {
+  font-size: 19px;
+}
+
+.date {
+  /* display: flex; */
+  float: right
+}
+
+li {
+  margin: 8px 0;
+}
+
+.skills {
+  display: inline;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px !important;
+  background: #b8b8b8;
+  background-color: rgb(184, 184, 184);
+  padding: 3px;
+  border-radius: 5px;
+  line-height: 35px;
+  flex-wrap: wrap;
+  
+
+
+}
+.honor{
+  
+  /* border-left-width: 50px; */
+  /* padding-left: 50px; */
+  line-height: .7em;
+  /* font-size: small; */
+}
+
+#email {
+  font-size: 15px !important;
+  font-weight: bold;
+  color: #708090;
+  text-decoration: none;
+  font-family: 'Cutive Mono', Courier, monospace;
+}
+
+.social-thumbnail {
+  position: relative;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.thumbnail {
+  position: relative;
+  width: 150px;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  position: relative;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.education {
+  text-align: center;
+}
+
+#profile-photo {
+  position: relative;
+  width: 220px;
+  height: 205px;
+  border-radius: 20px;
+}
+
+.description{
+  color: #555;
+  font-size: 18px;
+  line-height: .9em;
+
+}
+.title{
+ font-size: 22px;
+ line-height: .8em;
+}
