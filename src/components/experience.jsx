@@ -16,7 +16,7 @@ const experience = [
     },
     {
        
-        position: 'Senior Software Engineer;',
+        position: 'Senior Software Engineer',
         duration: '01/2019 - 12/2021',
         responsibilities: [`Created a web application utilizing Django Framework backed by MySQL and HTML/CSS/JavaScript which tracks engineering
             artifacts located in various servers/websites which significantly improved engineers ability to reference other engineering
@@ -33,7 +33,7 @@ const experience = [
     },
     {
       
-        position: 'Senior Software Engineer;',
+        position: 'Structural Analysis Engineer',
         duration: '01/2019 - 12/2021',
         responsibilities:  [`Utilized Pandas/Numpy to assist in the creation of metallic acreage checks that will automate structural analysis typically done
         manually thus allowing for less errors and rework`,

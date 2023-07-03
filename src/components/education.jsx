@@ -10,8 +10,8 @@ render() {
    <div className="education-section">
    <h3>Education</h3>
    <img className="thumbnail" src={CMU_Logo} alt="" />
-   <p className="education">MS: Mechanical Engineering 2015</p>
-   <p className="education">BS: Mechanical Engineering 2014</p>
+   <p className="education">MS, Mechanical Engineering 2015</p>
+   <p className="education">BS, Mechanical Engineering 2014</p>
    <br />
    <img className="icon" src={UW_Logo} alt="" />
    <p className="education" style={{ fontSize: ".9em" }}>
