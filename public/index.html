@@ -27,7 +27,19 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      const visitorAPI = 'https://xyo1s5kh09.execute-api.us-east-1.amazonaws.com/'
+      updateVisitCount();
+
+      function updateVisitCount() {
+          fetch(visitorAPI, {
+  method: 'POST',
+  mode:"no-cors"});
+      }
+
+    
+    
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
