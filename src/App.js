@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import About from './components/about'
 import Experience from './components/experience'
@@ -6,9 +5,10 @@ import Skills from './components/skills';
 import Education from './components/education'
 import Certifications from './components/certifications';
 import Contact from './components/contact';
-import Resume_Download from './components/resume_download'
+import ResumeDownload from './components/resume_download'
 import Leadership from './components/leadership'
 import Activities from './components/honors_activities'
+import VisitorCount from './components/visitor_count';
 
 function App() {
   return (
@@ -26,15 +26,19 @@ function App() {
         <hr></hr>
         <Contact></Contact>
         <hr></hr>
-        <Resume_Download></Resume_Download>
+        <ResumeDownload></ResumeDownload>
+        
       </div>
       <div id='info-pages'>
       <div className='page'>
         <Experience></Experience>
         <Leadership></Leadership>
         <Activities></Activities>
+       
         </div>
+        <VisitorCount></VisitorCount>
       </div>
+      
     </div>
   );
 }

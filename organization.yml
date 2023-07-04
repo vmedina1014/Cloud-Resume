@@ -1,0 +1,56 @@
+AWSTemplateFormatVersion: '2010-09-09-OC'
+Description: default template generated for organization with master account 565316771793
+
+Organization:
+  ManagementAccount:
+    Type: OC::ORG::MasterAccount
+    Properties:
+      AccountName: vmedina1014
+      AccountId: '565316771793'
+      RootEmail: v.medina1014@gmail.com
+
+  OrganizationRoot:
+    Type: OC::ORG::OrganizationRoot
+    Properties:
+      DefaultOrganizationAccessRoleName: OrganizationAccountAccessRole
+
+  ProductionOU:
+    Type: OC::ORG::OrganizationalUnit
+    Properties:
+      OrganizationalUnitName: Production
+      Accounts: !Ref ProductionAccount
+
+  TestOU:
+    Type: OC::ORG::OrganizationalUnit
+    Properties:
+      OrganizationalUnitName: Test
+      Accounts: !Ref TestAccount
+
+  DevOU:
+    Type: OC::ORG::OrganizationalUnit
+    Properties:
+      OrganizationalUnitName: Dev
+      Accounts: !Ref DevAccount
+
+  ProductionAccount:
+    Type: OC::ORG::Account
+    Properties:
+      AccountName: Production
+      AccountId: '199739871794'
+      RootEmail: vmedina1014+awsprod@gmail.com
+
+  TestAccount:
+    Type: OC::ORG::Account
+    Properties:
+      AccountName: Test
+      AccountId: '716534142354'
+      RootEmail: vmedina1014+awstest@gmail.com
+
+  DevAccount:
+    Type: OC::ORG::Account
+    Properties:
+      AccountName: Dev
+      AccountId: '716534142399'
+      RootEmail: vmedina1014+awsdev@gmail.com
+
+

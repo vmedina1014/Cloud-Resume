@@ -28,19 +28,31 @@
   </head>
   <body>
     <script>
-      const visitorAPI = 'https://xyo1s5kh09.execute-api.us-east-1.amazonaws.com/'
-      updateVisitCount();
+      const visitorAPI = 'https://xyo1s5kh09.execute-api.us-east-1.amazonaws.com/';
+      
+      
+
 
       function updateVisitCount() {
-          fetch(visitorAPI, {
-  method: 'POST',
-  mode:"no-cors"});
-      }
+          fetch(visitorAPI, 
+          {method: 'POST'});;
+        }
+        window.onload =function getVisitCount() {
+          const countElement = document.getElementById("visitor_count");
+          fetch(visitorAPI, {method: 'GET'})
+          .then(res => res.json())
+          .then(data => { console.log(data)
+          countElement.innerHTML = data})
+        }
+      
+      updateVisitCount();
+       getVisitCount();
 
     
     
     </script>
     <div id="root"></div>
+   
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
