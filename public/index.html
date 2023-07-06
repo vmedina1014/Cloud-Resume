@@ -27,31 +27,36 @@
     <title>Victor Medina's Resume</title>
   </head>
   <body>
+    <div id="root"></div>
     <script>
-      const visitorAPI = 'https://xyo1s5kh09.execute-api.us-east-1.amazonaws.com/';
+      // const visitorAPI = 'https://xyo1s5kh09.execute-api.us-east-1.amazonaws.com/';
       
       
 
 
-      function updateVisitCount() {
-          fetch(visitorAPI, 
-          {method: 'POST'});;
-        }
-        window.onload =function getVisitCount() {
-          const countElement = document.getElementById("visitor_count");
-          fetch(visitorAPI, {method: 'GET'})
-          .then(res => res.json())
-          .then(data => { console.log(data)
-          countElement.innerHTML = data})
-        }
+      // function updateVisitCount() {
+      //     fetch(visitorAPI, 
+      //     {method: 'POST'});;
+      //   }
+
+        
+
+      //   document.addEventListener("DOMContentLoaded", function getVisitCount() {
+      //     const countElement = document.getElementById("visitor_count");
+      //     fetch(visitorAPI, {method: 'GET'})
+      //     .then(res => res.json())
+      //     .then(data => { console.log(data)
+      //     countElement.innerHTML = data})
+      //   });
+        
       
-      updateVisitCount();
-       getVisitCount();
+      // updateVisitCount();
+      // getVisitCount();
 
     
     
     </script>
-    <div id="root"></div>
+    
    
     <!--
       This HTML file is a template.

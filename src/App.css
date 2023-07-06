@@ -117,7 +117,7 @@ hr {
   float: right;
   flex-wrap: nowrap;
   overflow: hidden;
-  color:#61dafb;
+  
   
 }
 
@@ -193,7 +193,7 @@ li {
 .description{
   color: #555;
   font-size: 18px;
-  line-height: .9em;
+  line-height: .95em;
 
 }
 .title{

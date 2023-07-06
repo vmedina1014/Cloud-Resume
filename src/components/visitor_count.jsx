@@ -1,8 +1,22 @@
 import React, { Component } from 'react'
 
 
+class visitor_count extends Component {
 
-export default class visitor_count extends Component {
+ 
+  componentDidMount(){    
+  const visitorAPI = 'https://xyo1s5kh09.execute-api.us-east-1.amazonaws.com/';
+  const countElement = document.getElementById("visitor_count");
+    fetch(visitorAPI, {method: 'POST'})
+    .then(res => res.json())
+    .then(data => { 
+    countElement.innerHTML = data.visitor_count})
+     
+  }
+
+  
+
+
   render() {
     return (
       <div>
@@ -13,3 +27,5 @@ export default class visitor_count extends Component {
     )
   }
 }
+
+export default visitor_count;

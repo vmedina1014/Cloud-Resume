@@ -14,7 +14,9 @@ function App() {
   return (
     <div class="flex-container">
 
-      {/* TODO:Fix the Flexbox to not cut off picture*/}
+      {/* FIXME:Fix the Flexbox to Hide or truncate dates when using media*/}
+      {/* TODO:Fix the Flexbox to Hide or truncate dates when using media*/}
+      
       <div id="sidebar"> 
         <About></About>
         <hr></hr>
