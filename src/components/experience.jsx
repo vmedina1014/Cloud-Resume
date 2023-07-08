@@ -34,7 +34,7 @@ const experience = [
     {
       
         position: 'Structural Analysis Engineer',
-        duration: '01/2019 - 12/2021',
+        duration: '08/2015 - 12/2021',
         responsibilities:  [`Utilized Pandas/Numpy to assist in the creation of metallic acreage checks that will automate structural analysis typically done
         manually thus allowing for less errors and rework`,
         `Created a data pipeline stress analysis summary template utilizing python data analytics tools (Pandas, Numpy) and visualization
