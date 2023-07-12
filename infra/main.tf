@@ -49,9 +49,10 @@ resource "aws_iam_policy" "iam_policy_for_resume_project" {
           "Effect" : "Allow",
           "Action" : [
             "dynamodb:UpdateItem",
-			      "dynamodb:GetItem"
+			      "dynamodb:GetItem",
+            "dynamodb:PutItem"
           ],
-          "Resource" : "arn:aws:dynamodb:*:*:table/Visitors"
+          "Resource" : "arn:aws:dynamodb:*:*:table/Cloud-Resume"
         },
       ]
   })
@@ -69,6 +70,8 @@ data "archive_file" "zip_the_python_code" {
   output_path = "${path.module}/lambda/func.zip"
 }
 
+
+
 resource "aws_lambda_function_url" "url1" {
   function_name      = aws_lambda_function.func.function_name
   authorization_type = "NONE"
@@ -82,3 +85,41 @@ resource "aws_lambda_function_url" "url1" {
     max_age           = 86400
   }
 }
+
+# Adding DynamoDb Table
+resource "aws_dynamodb_table" "Cloud_Resume" {
+  name           = "Cloud-Resume"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key       = "id"
+ attribute {
+    name = "id"
+    type = "N"
+  }
+
+  tags = {
+    Name        = "Cloud-Resume"
+    Environment = "production"
+  }
+}
+
+resource "aws_lambda_function" "initialize_dynamodb" {
+    filename      = "nametest.zip"
+    source_code_hash = data.archive_file.zip_the_python_code.output_base64sha256
+    function_name = "initialize_dynamodb"
+    role = aws_iam_role.iam_for_lambda.arn
+    handler = "initialize_dynamodb.lambda_handler"
+    runtime = "python3.8"
+        
+    }
+data "archive_file" "python_lambda_package" {  
+  type = "zip"  
+  source_file = "${path.module}/lambda/initialize_dynamodb.py" 
+  output_path = "nametest.zip"
+}
+
+# resource "aws_dynamodb_table_item" "Cloud_Resume" {
+#   hash_key = "id"
+#   item = 0
+  
+  
+# }

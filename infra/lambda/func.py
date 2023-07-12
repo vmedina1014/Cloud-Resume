@@ -13,11 +13,11 @@ def lambda_handler(event, context):
     logging.info(context)
     dynamodb = boto3.resource('dynamodb')
   
-    table = dynamodb.Table('Visitors')
+    table = dynamodb.Table('Cloud-Resume')
     http_method = event["requestContext"]["http"]["method"]
 
     if  http_method== "GET":
-        response = {"visitor_count":table.get_item(Key={"Visitor":"Visitor_Count"})["Item"]['num_of_visitors']}
+        response = {"visitor_count":table.get_item(Key={"Visitor_Count":"Visitor_Count"})["Item"]['num_of_visitors']}
 
         return response
     
