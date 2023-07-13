@@ -1,4 +1,6 @@
 **Cloud Resume Archiecture**
+
+
 Find my resume here: www.victor-a-medina.com
 
 
