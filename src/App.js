@@ -7,6 +7,7 @@ import Certifications from './components/certifications';
 import Contact from './components/contact';
 import ResumeDownload from './components/resume_download'
 import Leadership from './components/leadership'
+import Projects from './components/projects'
 import Activities from './components/honors_activities'
 import VisitorCount from './components/visitor_count';
 
@@ -34,6 +35,7 @@ function App() {
       <div id='info-pages'>
       <div className='page'>
         <Experience></Experience>
+        <Projects></Projects>
         <Leadership></Leadership>
         <Activities></Activities>
        

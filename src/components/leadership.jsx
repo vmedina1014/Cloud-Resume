@@ -3,13 +3,12 @@ import React, { Component } from 'react'
 const experience = [
     {
         name: 'Boeing',
-        position: 'Lead Structural Analysis Engineer',
-        duration: '12/2021 - 09/2022',
-        responsibilities: [`Lead Structural Analysis Engineer for the APU system development team for NMA involving several suppliers/teaming partners, and require frequent customer interface`,
-            `Lead development, integration and documentation of structural requirements to establish the system design`,
-            `Guided product design and verified structural integrity by using and developing analytical methods, finite element models/simulations and other analysis tools with Python throughout the product lifecycle to develop the structural environment, characteristics and performance`,
-            `Integrated a GIT process for Finite Element Models and CI for typical FEM checks that have now been automated for quicker FEM development reducing the need for FEM rework and manual checks saving over 80% man hours when compared to traditional methods`,
-            `Developed analytical processes/tools using Python to improve effectiveness, quality and efficiency of the development effort`]
+        position: 'Lead Software Engineer',
+        duration: '05/2019 - 02/2020',
+        responsibilities: [`Lead of the SoCal Propulsion site introducing tools and processes to the regional site`,
+            `Developed analytical processes/tools using Python to improve effectiveness, quality and efficiency of the development effort`,
+            `Mentored structural analysis engineers site wide on Python and GIT`,
+            `Managed project budgets, proposals and statuses for Propulsion leadership`]
     },
 
 ]

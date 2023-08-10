@@ -18,17 +18,11 @@ const experience = [
        
         position: 'Senior Software Engineer',
         duration: '01/2019 - 12/2021',
-        responsibilities: [`Created a web application utilizing Django Framework backed by MySQL and HTML/CSS/JavaScript which tracks engineering
-            artifacts located in various servers/websites which significantly improved engineers ability to reference other engineering
-            documents and significantly reduce rework`,
-            `Developed an API to easily allow transfer records from outdated Microsoft access database saving over 2,000 man hours when
-            compared to manual entry`,
-            ` Created technical documentation for legacy applications to enable
-            technical success for future developers`,
-            'Created GIT standard practices for FEM development through airplane programs reducing FEM development by 75%',
-            `Utilized Gitlab CI/CD pipeline to create finite element pre/post checks that will automatically test finite element models commits for
+        responsibilities: [`Created GIT standard practices for FEM development through airplane programs reducing FEM development by 75%`,
+            ` Utilized Gitlab CI/CD pipeline to create finite element pre/post checks that will automatically test finite element models commits for
             checks typically done manually thus significantly reducing manual workload by over 80%`,
-            `Lead of the SoCal Propulsion site introducing tools and processes to the regional site`
+            'Created a proof of concept knowledge graph using Neo4J',
+            
         ]
     },
     {
@@ -43,7 +37,9 @@ const experience = [
         `Utilized Python’s data analytic packages (Pandas, Numpy) to quickly determine element load trends between different load cases
         reducing man hours by 75% versus manually importing data through excel`,
         `Created a script that would transform data from various case studies and automatically create respective run files to efficiently
-        determine potential design space reducing manual work by 25%`
+        determine potential design space reducing manual work by 25%`,
+        `Lead Structural Analysis Engineer for the APU system development team for NMA involving several suppliers/teaming 
+        partners, and require frequent customer interface`
         ]
     }
 ]
